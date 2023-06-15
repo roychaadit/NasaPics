@@ -2,6 +2,11 @@
  * @type {import('@types/eslint').ESLint.ConfigData}
  */
 module.exports = {
+	parserOptions: {
+    project: "tsconfig.json",
+    tsconfigRootDir: __dirname,
+    sourceType: "module",
+  },
 	root: true,
 
 	env: {
